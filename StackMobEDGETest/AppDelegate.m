@@ -24,7 +24,7 @@
 
 - (void) initializeSMClient {
     [MagicalRecord setShouldDeleteStoreOnModelMismatch:YES];
-    [SMClient setDefaultClient:[[SMClient alloc] initWithAPIVersion:@"0" publicKey:@"09ca0c5e-f673-4c10-94be-f144a59b0aaf"]]; //Kamil's client
+    [SMClient setDefaultClient:[[SMClient alloc] initWithAPIVersion:@"0" publicKey:@""]];
     [MagicalRecord setupCoreDataStack];
     [[SMClient defaultClient] coreDataStoreWithManagedObjectModel:[NSManagedObjectModel MR_defaultManagedObjectModel]];
     [[SMClient defaultClient] coreDataStore].cachePolicy = SMCachePolicyTryNetworkElseCache;
