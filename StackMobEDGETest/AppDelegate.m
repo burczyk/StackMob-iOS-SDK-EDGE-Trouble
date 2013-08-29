@@ -8,12 +8,31 @@
 
 #import "AppDelegate.h"
 
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self initializeSMClient];
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
     return YES;
+}
+
+- (void) initializeSMClient {
+    [MagicalRecord setShouldDeleteStoreOnModelMismatch:YES];
+    [SMClient setDefaultClient:[[SMClient alloc] initWithAPIVersion:@"0" publicKey:@"09ca0c5e-f673-4c10-94be-f144a59b0aaf"]]; //Kamil's client
+    [MagicalRecord setupCoreDataStack];
+    [[SMClient defaultClient] coreDataStoreWithManagedObjectModel:[NSManagedObjectModel MR_defaultManagedObjectModel]];
+    [[SMClient defaultClient] coreDataStore].cachePolicy = SMCachePolicyTryNetworkElseCache;
+    [[SMClient defaultClient] coreDataStore].defaultSMMergePolicy = SMMergePolicyClientWins;
+    
+    [SMClient defaultClient].userSchema = @"User";
+    [[SMClient defaultClient] setUserPrimaryKeyField:@"username"];
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -41,6 +60,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark crash reporting
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
 }
 
 @end

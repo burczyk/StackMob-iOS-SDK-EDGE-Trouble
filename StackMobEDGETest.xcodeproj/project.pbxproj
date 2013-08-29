@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34416C6EB91D45079A120CA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C7C9BC47641679A7CACE6 /* libPods.a */; };
+		8E0D7FD117CFD8E30082A6BE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D7FD017CFD8E30082A6BE /* User.m */; };
+		8E0D7FD417CFD8E30082A6BE /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D7FD317CFD8E30082A6BE /* Profile.m */; };
+		8E0D7FD617CFD9B10082A6BE /* color_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0D7FD517CFD9B10082A6BE /* color_square.png */; };
+		8E0D7FD717CFDBF50082A6BE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D7FCD17CFD7EC0082A6BE /* Model.xcdatamodeld */; };
+		8E0D7FD817CFDBF60082A6BE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E0D7FCD17CFD7EC0082A6BE /* Model.xcdatamodeld */; };
 		8E7D31BD17CFD2DE0062AFC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7D31BC17CFD2DE0062AFC2 /* UIKit.framework */; };
 		8E7D31BF17CFD2DE0062AFC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7D31BE17CFD2DE0062AFC2 /* Foundation.framework */; };
 		8E7D31C117CFD2DE0062AFC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7D31C017CFD2DE0062AFC2 /* CoreGraphics.framework */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E0D7FCE17CFD7EC0082A6BE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8E0D7FCF17CFD8E30082A6BE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8E0D7FD017CFD8E30082A6BE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8E0D7FD217CFD8E30082A6BE /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		8E0D7FD317CFD8E30082A6BE /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		8E0D7FD517CFD9B10082A6BE /* color_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_square.png; sourceTree = "<group>"; };
 		8E7D31B917CFD2DE0062AFC2 /* StackMobEDGETest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackMobEDGETest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7D31BC17CFD2DE0062AFC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8E7D31BE17CFD2DE0062AFC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +70,8 @@
 		8E7D31EA17CFD2DE0062AFC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E7D31EC17CFD2DE0062AFC2 /* StackMobEDGETestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackMobEDGETestTests.h; sourceTree = "<group>"; };
 		8E7D31ED17CFD2DE0062AFC2 /* StackMobEDGETestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackMobEDGETestTests.m; sourceTree = "<group>"; };
+		8F8C7C9BC47641679A7CACE6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA68B90FF61642AD919486F5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,7 @@
 				8E7D31BD17CFD2DE0062AFC2 /* UIKit.framework in Frameworks */,
 				8E7D31BF17CFD2DE0062AFC2 /* Foundation.framework in Frameworks */,
 				8E7D31C117CFD2DE0062AFC2 /* CoreGraphics.framework in Frameworks */,
+				34416C6EB91D45079A120CA8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 				8E7D31E617CFD2DE0062AFC2 /* StackMobEDGETestTests */,
 				8E7D31BB17CFD2DE0062AFC2 /* Frameworks */,
 				8E7D31BA17CFD2DE0062AFC2 /* Products */,
+				BA68B90FF61642AD919486F5 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +126,7 @@
 				8E7D31BE17CFD2DE0062AFC2 /* Foundation.framework */,
 				8E7D31C017CFD2DE0062AFC2 /* CoreGraphics.framework */,
 				8E7D31E017CFD2DE0062AFC2 /* SenTestingKit.framework */,
+				8F8C7C9BC47641679A7CACE6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +139,11 @@
 				8E7D31D417CFD2DE0062AFC2 /* MainStoryboard.storyboard */,
 				8E7D31D717CFD2DE0062AFC2 /* ViewController.h */,
 				8E7D31D817CFD2DE0062AFC2 /* ViewController.m */,
+				8E0D7FCD17CFD7EC0082A6BE /* Model.xcdatamodeld */,
+				8E0D7FD217CFD8E30082A6BE /* Profile.h */,
+				8E0D7FD317CFD8E30082A6BE /* Profile.m */,
+				8E0D7FCF17CFD8E30082A6BE /* User.h */,
+				8E0D7FD017CFD8E30082A6BE /* User.m */,
 				8E7D31C317CFD2DE0062AFC2 /* Supporting Files */,
 			);
 			path = StackMobEDGETest;
@@ -130,6 +152,7 @@
 		8E7D31C317CFD2DE0062AFC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E0D7FD517CFD9B10082A6BE /* color_square.png */,
 				8E7D31C417CFD2DE0062AFC2 /* StackMobEDGETest-Info.plist */,
 				8E7D31C517CFD2DE0062AFC2 /* InfoPlist.strings */,
 				8E7D31C817CFD2DE0062AFC2 /* main.m */,
@@ -167,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E7D31F117CFD2DE0062AFC2 /* Build configuration list for PBXNativeTarget "StackMobEDGETest" */;
 			buildPhases = (
+				EF752F2E6CFE48298664DEBD /* Check Pods Manifest.lock */,
 				8E7D31B517CFD2DE0062AFC2 /* Sources */,
 				8E7D31B617CFD2DE0062AFC2 /* Frameworks */,
 				8E7D31B717CFD2DE0062AFC2 /* Resources */,
+				ABC27C6495A143EDA9DC34EE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +258,7 @@
 			files = (
 				8E7D31C717CFD2DE0062AFC2 /* InfoPlist.strings in Resources */,
 				8E7D31CF17CFD2DE0062AFC2 /* Default.png in Resources */,
+				8E0D7FD617CFD9B10082A6BE /* color_square.png in Resources */,
 				8E7D31D117CFD2DE0062AFC2 /* Default@2x.png in Resources */,
 				8E7D31D317CFD2DE0062AFC2 /* Default-568h@2x.png in Resources */,
 				8E7D31D617CFD2DE0062AFC2 /* MainStoryboard.storyboard in Resources */,
@@ -263,6 +289,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		ABC27C6495A143EDA9DC34EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF752F2E6CFE48298664DEBD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,9 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0D7FD117CFD8E30082A6BE /* User.m in Sources */,
+				8E0D7FD417CFD8E30082A6BE /* Profile.m in Sources */,
 				8E7D31C917CFD2DE0062AFC2 /* main.m in Sources */,
 				8E7D31CD17CFD2DE0062AFC2 /* AppDelegate.m in Sources */,
 				8E7D31D917CFD2DE0062AFC2 /* ViewController.m in Sources */,
+				8E0D7FD717CFDBF50082A6BE /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7D31EE17CFD2DE0062AFC2 /* StackMobEDGETestTests.m in Sources */,
+				8E0D7FD817CFDBF60082A6BE /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +440,7 @@
 		};
 		8E7D31F217CFD2DE0062AFC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA68B90FF61642AD919486F5 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StackMobEDGETest/StackMobEDGETest-Prefix.pch";
@@ -391,6 +452,7 @@
 		};
 		8E7D31F317CFD2DE0062AFC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA68B90FF61642AD919486F5 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StackMobEDGETest/StackMobEDGETest-Prefix.pch";
@@ -453,6 +515,7 @@
 				8E7D31F317CFD2DE0062AFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E7D31F417CFD2DE0062AFC2 /* Build configuration list for PBXNativeTarget "StackMobEDGETestTests" */ = {
 			isa = XCConfigurationList;
@@ -461,8 +524,22 @@
 				8E7D31F617CFD2DE0062AFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E0D7FCD17CFD7EC0082A6BE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E0D7FCE17CFD7EC0082A6BE /* Model.xcdatamodel */,
+			);
+			currentVersion = 8E0D7FCE17CFD7EC0082A6BE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8E7D31B117CFD2DE0062AFC2 /* Project object */;
 }

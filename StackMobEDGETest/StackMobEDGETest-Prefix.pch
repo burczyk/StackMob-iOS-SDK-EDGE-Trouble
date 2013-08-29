@@ -11,4 +11,12 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    #import "StackMob.h"
+    #import "CoreData+MagicalRecord.h"
+
+    #define SMCONTEXT [[[SMClient defaultClient] coreDataStore] contextForCurrentThread]
+    #define NETWORK_ON [UIApplication sharedApplication].networkActivityIndicatorVisible = YES
+    #define NETWORK_OFF [UIApplication sharedApplication].networkActivityIndicatorVisible = NO
+
 #endif

@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
+- (IBAction)buttonSavePhotoPushed:(UIButton *)sender;
+
 @end
