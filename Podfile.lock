@@ -1,0 +1,16 @@
+PODS:
+  - AFNetworking (1.1.0)
+  - MagicalRecord (2.1)
+  - StackMob (2.1.1):
+    - AFNetworking (= 1.1.0)
+
+DEPENDENCIES:
+  - MagicalRecord
+  - StackMob
+
+SPEC CHECKSUMS:
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  MagicalRecord: 64e7184c240087a45e9588a722eaf05b0ad837f7
+  StackMob: 52a76df0b81432d286832ff55b66c8e5f1b30a03
+
+COCOAPODS: 0.23.0
