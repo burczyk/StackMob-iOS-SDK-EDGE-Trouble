@@ -28,21 +28,38 @@
 }
 
 - (IBAction)buttonSavePhotoPushed:(UIButton *)sender {
+    NSLog(@"saving profile start with context: %@", SMCONTEXT);
+    [self createProfile];
+    [self saveContextForCurrentThread];
+}
+
+- (IBAction)buttonSavePhotoGCDPushed:(UIButton *)sender {
+    NSLog(@"buttonSavePhotoGCDPushed with context outside: %@", SMCONTEXT);
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSLog(@"saving profile GCD start with context: %@", SMCONTEXT);
+        [self createProfile];
+        [self saveContextForCurrentThread];
+    });
+    
+}
+
+- (void) createProfile {
     Profile *profile = [Profile MR_createInContext:SMCONTEXT];
     [profile assignObjectId];
     profile.photo = [SMBinaryDataConversion stringForBinaryData:UIImageJPEGRepresentation([UIImage imageNamed:@"color_square.png"], 1) name:@"color_square.png" contentType:@"image/png"];
-    
-    NSLog(@"saving profile: %@ start", profile.objectID);
-    
+}
+
+- (void) saveContextForCurrentThread {
     NETWORK_ON;
     [_activityIndicator startAnimating];
     
     [SMCONTEXT saveOnSuccess:^{
-        NSLog(@"context save success: %@", profile.objectID);
+        NSLog(@"context save success");
         NETWORK_OFF;
         [_activityIndicator stopAnimating];
     } onFailure:^(NSError *error) {
-        NSLog(@"context save error: %@", profile.objectID);
+        NSLog(@"context save error");
         NETWORK_OFF;
         [_activityIndicator stopAnimating];
     }];

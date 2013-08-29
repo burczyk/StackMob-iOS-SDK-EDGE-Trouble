@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 - (IBAction)buttonSavePhotoPushed:(UIButton *)sender;
+- (IBAction)buttonSavePhotoGCDPushed:(UIButton *)sender;
 
 @end
